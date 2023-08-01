@@ -7,7 +7,7 @@ bpf_target: simple.bpf.c
 	clang -g -O2 -c -target bpf -o simple.bpf.o simple.bpf.c
 
 go_target: simple.bpf.o main.go
-	CC=gcc CGO_CFLAGS="-I /usr/include/bpf" CGO_LDFLAGS="/usr/lib64/libbpf.a" go build -o libbpfgo-prog
+	CC=gcc CGO_CFLAGS="-I /opt/code/cpkg/libs/bpf" CGO_LDFLAGS="/opt/code/cpkg/libs/bpf/libbpf.a" go build -o libbpfgo-prog
 
 clean:
-	rm simple.bpf.o libbpfgo-prog vmlinux.h
+	rm simple.bpf.o libbpfgo-prog

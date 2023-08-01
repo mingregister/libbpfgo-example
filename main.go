@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	bpf "github.com/aquasecurity/tracee/libbpfgo"
+	bpf "github.com/aquasecurity/libbpfgo"
 )
 
 func main() {

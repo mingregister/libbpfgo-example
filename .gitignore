@@ -1,3 +1,2 @@
 simple.bpf.o
 libbpfgo-prog
-vmlinux.h
